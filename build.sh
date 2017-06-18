@@ -47,6 +47,9 @@ fi
 # binutils
 fetchextract "$BINUTILS_URL"
 BINUTILS_DIR=$(stripfileext $(basename $BINUTILS_URL))
+git clone $CUSTOM_OR1KSRC_URL
+cp $CUSTOM_OR1KSRC_DIR/opcodes/or1k* $BINUTILS_DIR/opcodes/
+
 
 sed -i -e 's,MAKEINFO="$MISSING makeinfo",MAKEINFO=true,g' \
     $BINUTILS_DIR/configure
