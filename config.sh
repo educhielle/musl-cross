@@ -5,6 +5,8 @@ LINUX_HEADERS_VERSION=4.5
 
 ARCH=or1k
 BINUTILS_URL=http://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.bz2
+CUSTOM_OR1KSRC_DIR=or1k-src
+CUSTOM_OR1KSRC_URL=https://github.com/educhielle/${CUSTOM_OR1KSRC_DIR}
 
 GCC_URL=https://github.com/openrisc/or1k-gcc/archive/musl-${GCC_VERSION}.tar.gz
 
